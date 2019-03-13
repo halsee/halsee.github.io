@@ -1,0 +1,18 @@
+// Main Menu
+ul.navbar-nav.d-none.d-lg-block
+
+  // Home
+  li()&attributes((parentMenu === 'Home') ? {'class': 'nav-item active'} : {'class': 'nav-item'})
+    a(href='index.html').nav-link Home
+
+  // Story
+  li()&attributes((parentMenu === 'Story') ? {'class': 'nav-item active'} : {'class': 'nav-item'})
+    a(href='story.html').nav-link Story
+
+  // Projects
+  li()&attributes((parentMenu === 'Portfolio') ? {'class': 'nav-item active'} : {'class': 'nav-item'})
+    a(href='portfolio.html').nav-link Portfolio
+  
+  // Contact
+  li()&attributes((parentMenu === 'Contact') ? {'class': 'nav-item active'} : {'class': 'nav-item'})
+    a(href='contact.html').nav-link Contact

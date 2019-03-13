@@ -1,0 +1,22 @@
+// Mobile Menu
+.accordion.mobile-menu#accordion-menu
+
+  // Home
+  .card
+    .card-header
+      a(href='index.html')&attributes((parentMenu === 'Home') ? {'class': 'mobile-menu-link active'} : {'class': 'mobile-menu-link'}) Home
+
+  // Story
+  .card
+    .card-header
+      a(href='story.html')&attributes((parentMenu === 'Story') ? {'class': 'mobile-menu-link active'} : {'class': 'mobile-menu-link'}) Story
+
+  // Portfolio
+  .card
+    .card-header
+      a(href='portfolio.html')&attributes((parentMenu === 'Portfolio') ? {'class': 'mobile-menu-link active'} : {'class': 'mobile-menu-link'}) Portfolio
+
+  // Contact
+  .card
+    .card-header
+      a(href='contact.html')&attributes((parentMenu === 'Contact') ? {'class': 'mobile-menu-link active'} : {'class': 'mobile-menu-link'}) Contact
