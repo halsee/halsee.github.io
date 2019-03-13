@@ -1,0 +1,82 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Asian Art Museum Wayfinding Kiosk'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/aam_kiosk_wayfinding_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "Kiosk at the Asian Art Museum"}').gallery-item.mb-30
+              +image('img/portfolio/aam_kiosk_wayfinding_05.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=jCAQLVso5fY' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/aam_kiosk_wayfinding_09.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/aam_kiosk_wayfinding_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Interface for the 3rd floor"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_kiosk_wayfinding_02.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/aam_kiosk_wayfinding_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Interface for the 2nd floor, highlighting Japan"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_kiosk_wayfinding_03.jpg', 'Gallery Image')
+            .row
+              .col
+                a(href='img/portfolio/single/aam_kiosk_wayfinding_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Interface for the 1st floor, highlighting directions"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_kiosk_wayfinding_04.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/aam_kiosk_wayfinding_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Kiosk software running on multiple platforms"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_kiosk_wayfinding_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://vimeo.com/323273924?autoplay=1&muted=1' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/aam_kiosk_wayfinding_01.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/aam_kiosk_wayfinding_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "Some mini visitors using the kiosk"}').gallery-item.mb-30
+              +image('img/portfolio/aam_kiosk_wayfinding_07.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/aam_kiosk_wayfinding_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "Results from user testing, organized in Trello"}').gallery-item.mb-30
+              +image('img/portfolio/aam_kiosk_wayfinding_08.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span Asian Art Museum
+            li
+              a(href='http://www.asianart.org/' target='_blank').navi-link.font-weight-medium www.asianart.org
+            li
+              span San Francisco, CA
+        .widget
+          h2.widget-title Objective
+          p.mb-0 Enable museum visitors to quickly (within 3 minutes) learn what the museum has on view, and how to get there within the museum.
+        .widget
+          h2.widget-title Result
+          p.mb-0 A 55-inch touchscreen with a multi-language, interactive wayfinding experience, positioned just inside the entrance to the museum.
+        .widget
+          h2.widget-title Description
+          p.mb-0 This wayfinding kiosk was the first large-format touchscreen experience we had ever designed, and one of the projects I’m most proud of. One of the best parts of working with the Asian Art Museum was that they supported iteration through testing, and were equally willing to put in the effort to do it right. After the initial design iterations, we built a functional prototype and tested with 11 of the museum’s internal staff across many departments. Although the experience was intended for visitors, internal testing still gave us actionable feedback, and ultimately, support from the staff, which was critical at the start of the project. With the museum’s help recruiting testers, we ran 2 more rounds of testing and iteration, each with 5 visitors. Once deployed, the kiosk was a huge success. During the first 2 weeks, 19% of all museum visitors engaged with the kiosk. 25% of them used it in the Chinese language, 10% in Spanish, and 65% in English. A huge plus was the ability to witness people (especially kids) engaging with it. This was easily the most inspirational and motivating part of the entire project.
+        .widget
+          h2.widget-title My Roles
+          p.mb-0 Design, user testing, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

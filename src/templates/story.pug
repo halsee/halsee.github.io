@@ -1,0 +1,32 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'The Story of Us'
+  - var parentMenu = 'Story'
+
+
+//- Page Content
+block content
+  .container.pb-5.mb-3
+    .row
+      .col
+      // Post Content
+      .col-12.col-sm-10.col-md-8.col-lg-7.px-sm-3
+        p.pb-3 Mark, Aaron, and Josh (that’s me) met first quarter of freshman year at Cal Poly State University in San Luis Obispo, CA. As newly declared Computer Science undergrads, having no real experience on the subject, the first course was like an ice cold shower on a cold morning. Later, we’d learn that the course was intended to filter out 50% of the students who weren’t truly serious about computer engineering. The struggle was the catalyst for us working together, and that’s exactly what we did for the next decade. Mark began focusing on computer graphics, Aaron on backend programming, and I transferred into Graphic Communication, focusing on design and front end development.
+        // Gallery
+        .row.pb-1
+          .col
+            a(href='img/components/gallery/10.jpg' data-fancybox='gallery1' data-options='{"caption": "Gallery Image Caption"}').gallery-item.mb-30
+              +image('img/components/gallery/th10.jpg', 'Gallery Image')
+          .col
+            a(href='img/components/gallery/10.jpg' data-fancybox='gallery1' data-options='{"caption": "Gallery Image Caption"}').gallery-item.mb-30
+              +image('img/components/gallery/th10.jpg', 'Gallery Image')
+        p.pb-3 During our time at Cal Poly we built a number of projects together, mostly related to a shared passion for storytelling and video games. The most ambitious was a video game for Mark’s senior project. I graduated a bit early and went to work at a local design agency. During our evenings after class and work, we began to build another kind of game, and one of the first to incorporate augmented reality. With that concept, we applied to two “business accelerator programs,” Innovation Quest and the SLO HotHouse. Fortunately we were accepted into both programs and postponed a shared graduation trip to take part in the programs. Now we had the resources and time to release Go Make It Rain out into the world! Yes… it’s exactly what you think it is.
+        p.pb-3 At the conclusion of the programs, we were still working on Go Make It Rain, but decided to stay true to our post-graduation promise and travel (another shared passion). We landed in Panama City on September 28th, 2012, and continued on to Peru a week later. Our main destination was Machu Picchu, and it did not disappoint. It’s one of the most beautiful and serene places I have ever visited. We had booked a tour guide as part of a group, but it was a lackluster experience that didn’t do justice to one of the 7 Wonders of the World. It left us yearning for something better, something that would allow us to feel like we were walking among the Inca, even for a moment. It was almost immediately clear that we were the team to do something about it. We loved travel, and we loved making fun and engaging experiences. This is what we wanted to do. We finished and released Go Make It Rain, I left my full-time design position, and we got working on Guidekick.
+        p.pb-3 Fast forward 1 year and we released the first iteration of the mobile tour guide after a partnership with Hearst Castle. We were incredibly proud and the app was even featured on the front page of the App Store. Our ambition to create the next generation tour guide was off to a strong start. It got us into 500 Startups, so we moved to the bay area to execute on the shared vision and grow the company. Fast forward another year and we released the Guidekick app with San Francisco guides for Alcatraz, Golden Gate Bridge, Golden Gate Park, the Sutro Baths, and more being created. This put us on the travel guide map (ha ha). During that time we had been working with San Francisco’s de Young Museum to feature them within the Golden Gate Park guide of the app. That turned out to be a saving grace because we were struggling to make the economics work of selling in-app guides. 
+        p.pb-3 With the desire to be more than ramen-profitable and continue creating guides, we started focusing more heavily on museums. In partnership with the Fine Arts Museums of San Francisco, we launched the de Young and Legion of Honor apps. Those garnered the attention of Apple and led to a collaborative museum experience on the Apple Watch. Team growth followed product growth, and at our peak we were a modest but ferocious team of 10. Since then, we’ve stayed true to digital wayfinding and storytelling, and have been fortunate enough to work with extraordinary partners such as the National Gallery of Art, the Getty, Indianapolis Airport, and many more. Most recently, we built and released a mapping platform called Ambiarc which generates 3D maps and allows developers to integrate them into their projects.
+      .col
+  //- footer-blog.pug template
+  include partials/footer-default

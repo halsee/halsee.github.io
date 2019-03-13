@@ -1,0 +1,48 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Contact'
+  - var pageTitleBgImage =''
+  - var parentMenu = 'Contact'
+
+//- Page Content
+block content
+  .container.pb-4.mb-2
+
+    // Customer Service
+    .row
+      .col-md-7
+        h2.text-muted.opacity-50.mb-30 Customer Service
+      .col-md-5
+        ul.list-icon
+          li.mb-2 
+            i.fe-icon-mail.text-muted
+            a(href='mailto:customer.service@example.com').navi-link.ml-1 customer.service@example.com
+          li.mb-2
+            i.fe-icon-phone.text-muted
+            a(href='tel:108044357260').navi-link.ml-1 #
+          li.mb-2
+            i.fe-icon-clock.text-muted
+            span.ml-1 1 - 2 business days
+    hr.mt-5
+
+    // Tech Support
+    .row.mt-5.pb-3
+      .col-md-7
+        h2.text-muted.opacity-50.mb-30 Tech Support
+      .col-md-5
+        ul.list-icon
+          li.mb-2
+            i.fe-icon-mail.text-muted
+            a(href='mailto:support@example.com').navi-link.ml-1 support@example.com
+          li.mb-2
+            i.fe-icon-phone.text-muted
+            a(href='tel:100331697720').navi-link.ml-1 #
+          li.mb-2
+            i.fe-icon-clock.text-muted
+            span.ml-1 1 - 2 business days
+
+  //- footer-default.pug template
+  include partials/footer-default

@@ -1,0 +1,200 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Portfolio'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.pb-5.px-3.mb-3
+    
+    // Filters
+    ul(class='nav nav-tabs item-filter nav-tabs-style-2 mb-4')
+      li.nav-item
+        a(href='#' class='nav-link active all' data-filter='*')
+          | All&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link featured' data-filter='.featured')
+          | Featured&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link mobile' data-filter='.mobile')
+          | Mobile&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.web')
+          | Web&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.touchscreen')
+          | Touchscreen&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.design')
+          | Design&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.fun')
+          | Fun&nbsp;
+          sup #
+
+    ul(class='nav nav-tabs item-filter sub-filter nav-tabs-style-2 mb-4 mb-md-5')
+      li.nav-item
+        a(href='#' class='nav-link prototyping' data-filter='.prototyping')
+          | Prototyping&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link user-testing' data-filter='.user-testing')
+          | User Testing&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.data')
+          | Data&nbsp;
+          sup #
+      li.nav-item
+        a(href='#' class='nav-link' data-filter='.marketing')
+          | Marketing&nbsp;
+          sup #
+
+    // Grid
+    .isotope-grid.filter-grid.cols-3
+      .gutter-sizer
+      .grid-sizer
+
+      // Portfolio Item
+      .grid-item.featured.touchscreen.prototyping.user-testing.data.mb-30
+        .portfolio-card
+          a(href='portfolio-Asian-Art-Museum-Wayfinding-Kiosk.html').portfolio-thumb
+            +image('img/portfolio/aam_kiosk_wayfinding_05.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Asian-Art-Museum-Wayfinding-Kiosk.html') Asian Art Museum Wayfinding Kiosk
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
+                a(href='#' class='nav-link' data-filter='.data').tag-link Data
+
+      // Portfolio Item
+      .grid-item.featured.touchscreen.prototyping.user-testing.data.mb-30
+        .portfolio-card
+          a(href='portfolio-Getty-Digital-Label-System.html').portfolio-thumb
+            +image('img/portfolio/getty_dls_02.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Getty-Digital-Label-System.html') Getty Digital Label System
+            a(href='#').tag-link Prototyping
+            a(href='#').tag-link User Testing
+            a(href='#').tag-link Data
+
+      // Portfolio Item
+      .grid-item.featured.mobile.prototyping.user-testing.mb-30
+        .portfolio-card
+          a(href='portfolio-single-wide-slider.html').portfolio-thumb
+            +image('img/portfolio/03.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-single-wide-slider.html') de Young / Legion of Honor
+            a(href='#').tag-link Prototyping
+            a(href='#').tag-link User Testing
+
+      // Portfolio Item
+      .grid-item.mobile-apps.mb-30
+        .portfolio-card
+          a(href='portfolio-single-wide-gallery.html').portfolio-thumb
+            +image('img/portfolio/04.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | Michael Brown
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 43
+            h5.portfolio-title: a(href='portfolio-single-wide-gallery.html') iOS App Development
+            a(href='#').tag-link Mobile Apps
+
+      // Portfolio Item
+      .grid-item.interior-design.mb-30
+        .portfolio-card
+          a(href='portfolio-single-side-gallery-grid.html').portfolio-thumb
+            +image('img/portfolio/05.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | Emilia Green
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 27
+            h5.portfolio-title: a(href='portfolio-single-side-gallery-grid.html') Working Space Design
+            a(href='#').tag-link Interior Design
+
+      // Portfolio Item
+      .grid-item.branding.mb-30
+        .portfolio-card
+          a(href='portfolio-single-side-gallery-list.html').portfolio-thumb
+            +image('img/portfolio/07.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | Emma Johnson
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 116
+            h5.portfolio-title: a(href='portfolio-single-side-gallery-list.html') Apple Package Design
+            a(href='#').tag-link Package Design
+
+      // Portfolio Item
+      .grid-item.interior-design.mb-30
+        .portfolio-card
+          a(href='portfolio-single-wide-slider.html').portfolio-thumb
+            +image('img/portfolio/06.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | William Smith
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 38
+            h5.portfolio-title: a(href='portfolio-single-wide-slider.html') Wall Shelves Design
+            a(href='#').tag-link Interior Design
+
+      // Portfolio Item
+      .grid-item.branding.mb-30
+        .portfolio-card
+          a(href='portfolio-single-wide-gallery.html').portfolio-thumb
+            +image('img/portfolio/08.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | Olivia Davis
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 205
+            h5.portfolio-title: a(href='portfolio-single-wide-gallery.html') Bottle &amp; Logo Design
+            a(href='#').tag-link Package Branding
+
+      // Portfolio Item
+      .grid-item.mobile-apps.mb-30
+        .portfolio-card
+          a(href='portfolio-single-side-gallery-grid.html').portfolio-thumb
+            +image('img/portfolio/09.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            .portfolio-meta
+              span.mr-3
+                i.fe-icon-user
+                | Benjamin Miller
+              a(href='#')
+                i.fe-icon-heart.text-accent
+                | 156
+            h5.portfolio-title: a(href='portfolio-single-side-gallery-grid.html') Watch Interaface Design
+            a(href='#').tag-link Mobile Apps
+
+    .pt-2
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

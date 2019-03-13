@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Menu-->
+    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top:71px;">
+        <!-- Mobile Menu-->
+        <div class="accordion mobile-menu" id="accordion-menu">
+          <!-- Home-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="index.html">Home</a></div>
+          </div>
+          <!-- Story-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="story.html">Story</a></div>
+          </div>
+          <!-- Portfolio-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link active" href="portfolio.html">Portfolio</a></div>
+          </div>
+          <!-- Contact-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="contact.html">Contact</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar: Simple-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="fixed-top navbar-wrapper navbar-boxed">
+      <div class="container px-3">
+        <div class="d-table-cell align-middle">
+          <div class="navbar justify-content-between justify-content-lg-center"><a class="navbar-brand rounded-circle" href="index.html"><img class="rounded-circle" src="img/logo-J3.png" alt="JBH Design"></a>
+            <!-- Main Menu-->
+            <ul class="navbar-nav d-none d-lg-block">
+              <!-- Home-->
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <!-- Story-->
+              <li class="nav-item"><a class="nav-link" href="story.html">Story</a></li>
+              <!-- Projects-->
+              <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <!-- Contact-->
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div>
+              <ul class="navbar-buttons d-inline-block align-middle">
+                <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fe-icon-menu"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Page Title-->
+    <div class="page-title d-flex" aria-label="Page title" style="background-image: url(img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <h1 class="page-title-heading">Portfolio</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container pb-5 mb-3">
+      <!-- Filters-->
+      <ul class="nav nav-tabs nav-tabs-style-2 mb-4">
+        <li class="nav-item"><a class="nav-link active" href="#" data-filter="*">All&nbsp;<sup>9</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".featured">Featured&nbsp;<sup>6</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".mobile">Mobile&nbsp;<sup>1</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".web">Web&nbsp;<sup>3</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".touchscreen">Touchscreen&nbsp;<sup>2</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".design">Design&nbsp;<sup>2</sup></a></li>
+      </ul>
+      <ul class="nav nav-tabs nav-tabs-style-2 mb-4">
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".prototyping">Prototyping&nbsp;<sup>3</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".user-testing">User Testing&nbsp;<sup>1</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".data">Data&nbsp;<sup>3</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".marketing">Marketing&nbsp;<sup>3</sup></a></li>
+      </ul>
+      <!-- Grid-->
+      <div class="isotope-grid filter-grid cols-3">
+        <div class="gutter-sizer"></div>
+        <div class="grid-sizer"></div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured touchscreen prototyping user-testing data mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/01.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-Asian-Art-Museum-Wayfinding-Kiosk.html">Asian Art Museum Wayfinding Kiosk</a></h5><a class="nav-link tag-link" href="#" data-filter=".prototyping">Prototyping</a><a class="tag-link" href="#">User Testing</a><a class="tag-link" href="#">Data</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured touchscreen prototyping user-testing data mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-list.html"><img src="img/portfolio/02.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-list.html">Getty Digital Label System</a></h5><br><a class="tag-link" href="#">Prototyping</a><a class="tag-link" href="#">User Testing</a><a class="tag-link" href="#">Data</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured mobile prototyping user-testing mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/03.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-slider.html">de Young / Legion of Honor</a></h5><a class="tag-link" href="#">Prototyping</a><a class="tag-link" href="#">User Testing</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item mobile-apps mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-gallery.html"><img src="img/portfolio/04.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Michael Brown</span><a href="#"><i class="fe-icon-heart text-accent"></i>43</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-gallery.html">iOS App Development</a></h5><a class="tag-link" href="#">Mobile Apps</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item interior-design mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/05.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Emilia Green</span><a href="#"><i class="fe-icon-heart text-accent"></i>27</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-grid.html">Working Space Design</a></h5><a class="tag-link" href="#">Interior Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item branding mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-list.html"><img src="img/portfolio/07.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Emma Johnson</span><a href="#"><i class="fe-icon-heart text-accent"></i>116</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-list.html">Apple Package Design</a></h5><a class="tag-link" href="#">Package Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item interior-design mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/06.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>William Smith</span><a href="#"><i class="fe-icon-heart text-accent"></i>38</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-slider.html">Wall Shelves Design</a></h5><a class="tag-link" href="#">Interior Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item branding mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-gallery.html"><img src="img/portfolio/08.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Olivia Davis</span><a href="#"><i class="fe-icon-heart text-accent"></i>205</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-gallery.html">Bottle &amp; Logo Design</a></h5><a class="tag-link" href="#">Package Branding</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item mobile-apps mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/09.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Benjamin Miller</span><a href="#"><i class="fe-icon-heart text-accent"></i>156</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-grid.html">Watch Interaface Design</a></h5><a class="tag-link" href="#">Mobile Apps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-2"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="d-lg-flex align-items-center bg-dark">
+      <div class="w-100 py-5 px-4">
+        <div class="mx-auto text-center" style="max-width: 340px;">
+          <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Want to hire us?</h6>
+          <ul class="list-unstyled text-white">
+            <li><span class='opacity-60'>Call:</span> +1 (212) 477 690 000</li>
+            <li><span class='opacity-60'>Email:</span> info@example.com</li>
+          </ul>
+          <div class="widget pt-3 mb-4"><a class="social-btn sb-style-6 sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-6 sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-6 sb-dribbble sb-light-skin" href="#"><i class="socicon-dribbble"></i></a><a class="social-btn sb-style-6 sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-btn sb-style-6 sb-behance sb-light-skin" href="#"><i class="socicon-behance"></i></a></div>
+          <p class="m-0 text-sm text-white"><span class='opacity-60'>© All rights reserved. Made with</span> <i class='d-inline-block align-middle fe-icon-heart text-danger'></i> <a href='http://createx.studio/' class='d-inline-block nav-link text-white opacity-60 p-0' target='_blank'>by Createx Studio</a></p>
+        </div>
+      </div>
+      <div class="w-100 py-5 px-4" style="background-color: #30363d;">
+        <div class="widget widget-gallery mb-0 mx-auto" style="max-width: 250px;">
+          <div class="d-flex justify-content-between"><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/01.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="img/widgets/gallery/th01.jpg" alt="Gallery Image"/></a><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/02.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="img/widgets/gallery/th02.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video mb-2" href="https://www.youtube.com/watch?v=VE30ntVVfvAk&amp;amp;autoplay=1&amp;amp;rel=0&amp;amp;controls=0&amp;amp;showinfo=0" data-fancybox="gallery1" data-width="1000" data-height="563"><img src="img/widgets/gallery/th03.jpg" alt="Gallery Image"/></a></div>
+          <div class="d-flex justify-content-between"><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/04.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="img/widgets/gallery/th04.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video mb-2 mr-2" href="https://vimeo.com/25141497?color=ac32e4" data-fancybox="gallery1" data-width="1000" data-height="563"><img src="img/widgets/gallery/th05.jpg" alt="Gallery Image"/></a><a class="gallery-item mb-2" href="../img/components/gallery/06.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="img/widgets/gallery/th06.jpg" alt="Gallery Image"/></a></div>
+          <div class="pt-1"><a class="btn btn-gradient btn-block" href="#"><i class="fe-icon-instagram"></i>&nbsp;View our Instagram</a></div>
+        </div>
+      </div>
+      <div class="w-100 py-5 px-4">
+        <div class="mx-auto" style="max-width: 340px;">
+          <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Subscription</h6>
+          <p class="text-sm text-white opacity-60 text-center pb-1">To receive latest works and inspiration from our portfolio.</p>
+          <form action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" target="_blank" novalidate>
+            <div class="input-group">
+              <input class="form-control form-control-light-skin" type="email" name="EMAIL" placeholder="Email address">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Sign Up</button>
+              </div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Menu-->
+    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top:71px;">
+        <!-- Mobile Menu-->
+        <div class="accordion mobile-menu" id="accordion-menu">
+          <!-- Home-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="index.html">Home</a></div>
+          </div>
+          <!-- Story-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="story.html">Story</a></div>
+          </div>
+          <!-- Portfolio-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link active" href="portfolio.html">Portfolio</a></div>
+          </div>
+          <!-- Contact-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="contact.html">Contact</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar: Simple-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="fixed-top navbar-wrapper navbar-boxed">
+      <div class="container px-3">
+        <div class="d-table-cell align-middle">
+          <div class="navbar justify-content-between justify-content-lg-center"><a class="navbar-brand rounded-circle" href="index.html"><img class="rounded-circle" src="img/logo-J3.png" alt="JBH Design"></a>
+            <!-- Main Menu-->
+            <ul class="navbar-nav d-none d-lg-block">
+              <!-- Home-->
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <!-- Story-->
+              <li class="nav-item"><a class="nav-link" href="story.html">Story</a></li>
+              <!-- Projects-->
+              <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <!-- Contact-->
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div>
+              <ul class="navbar-buttons d-inline-block align-middle">
+                <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fe-icon-menu"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Page Title-->
+    <div class="page-title d-flex" aria-label="Page title">
+      <div class="container text-left align-self-center">
+        <h1 class="page-title-heading">Portfolio</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container pb-5 px-3 mb-3">
+      <!-- Filters-->
+      <ul class="nav nav-tabs item-filter nav-tabs-style-2 mb-4">
+        <li class="nav-item"><a class="nav-link active all" href="#" data-filter="*">All&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link featured" href="#" data-filter=".featured">Featured&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link mobile" href="#" data-filter=".mobile">Mobile&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".web">Web&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".touchscreen">Touchscreen&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".design">Design&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".fun">Fun&nbsp;<sup>#</sup></a></li>
+      </ul>
+      <ul class="nav nav-tabs item-filter sub-filter nav-tabs-style-2 mb-4 mb-md-5">
+        <li class="nav-item"><a class="nav-link prototyping" href="#" data-filter=".prototyping">Prototyping&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link user-testing" href="#" data-filter=".user-testing">User Testing&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".data">Data&nbsp;<sup>#</sup></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-filter=".marketing">Marketing&nbsp;<sup>#</sup></a></li>
+      </ul>
+      <!-- Grid-->
+      <div class="isotope-grid filter-grid cols-3">
+        <div class="gutter-sizer"></div>
+        <div class="grid-sizer"></div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured touchscreen prototyping user-testing data mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-Asian-Art-Museum-Wayfinding-Kiosk.html"><img src="img/portfolio/aam_kiosk_wayfinding_05.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-Asian-Art-Museum-Wayfinding-Kiosk.html">Asian Art Museum Wayfinding Kiosk</a></h5>
+              <div class="filer-grid">
+                <div class="nav-tabs"><a class="nav-link tag-link" href="#" data-filter=".prototyping">Prototyping</a><a class="nav-link tag-link" href="#" data-filter=".user-testing">User Testing</a><a class="nav-link tag-link" href="#" data-filter=".data">Data</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured touchscreen prototyping user-testing data mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-Getty-Digital-Label-System.html"><img src="img/portfolio/getty_dls_02.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-Getty-Digital-Label-System.html">Getty Digital Label System</a></h5><a class="tag-link" href="#">Prototyping</a><a class="tag-link" href="#">User Testing</a><a class="tag-link" href="#">Data</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item featured mobile prototyping user-testing mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/03.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-slider.html">de Young / Legion of Honor</a></h5><a class="tag-link" href="#">Prototyping</a><a class="tag-link" href="#">User Testing</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item mobile-apps mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-gallery.html"><img src="img/portfolio/04.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Michael Brown</span><a href="#"><i class="fe-icon-heart text-accent"></i>43</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-gallery.html">iOS App Development</a></h5><a class="tag-link" href="#">Mobile Apps</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item interior-design mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/05.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Emilia Green</span><a href="#"><i class="fe-icon-heart text-accent"></i>27</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-grid.html">Working Space Design</a></h5><a class="tag-link" href="#">Interior Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item branding mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-list.html"><img src="img/portfolio/07.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Emma Johnson</span><a href="#"><i class="fe-icon-heart text-accent"></i>116</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-list.html">Apple Package Design</a></h5><a class="tag-link" href="#">Package Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item interior-design mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/06.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>William Smith</span><a href="#"><i class="fe-icon-heart text-accent"></i>38</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-slider.html">Wall Shelves Design</a></h5><a class="tag-link" href="#">Interior Design</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item branding mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-wide-gallery.html"><img src="img/portfolio/08.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Olivia Davis</span><a href="#"><i class="fe-icon-heart text-accent"></i>205</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-wide-gallery.html">Bottle &amp; Logo Design</a></h5><a class="tag-link" href="#">Package Branding</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item-->
+        <div class="grid-item mobile-apps mb-30">
+          <div class="portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/09.jpg" alt="Portfolio Thumbnail"/></a>
+            <div class="portfolio-card-body">
+              <div class="portfolio-meta"><span class="mr-3"><i class="fe-icon-user"></i>Benjamin Miller</span><a href="#"><i class="fe-icon-heart text-accent"></i>156</a></div>
+              <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-grid.html">Watch Interaface Design</a></h5><a class="tag-link" href="#">Mobile Apps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-2"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="mt-5">
+      <div class="pt-3">
+        <div class="container">
+          <div class="d-flex justify-content-center py-4 text-center text-md-left">
+            <p class="pt-3 text-muted text-sm">© All rights reserved. jbhdesign.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
