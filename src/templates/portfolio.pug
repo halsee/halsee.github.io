@@ -51,11 +51,11 @@ block content
           | User Testing&nbsp;
           sup #
       li.nav-item
-        a(href='#' class='nav-link' data-filter='.data')
+        a(href='#' class='nav-link data' data-filter='.data')
           | Data&nbsp;
           sup #
       li.nav-item
-        a(href='#' class='nav-link' data-filter='.marketing')
+        a(href='#' class='nav-link marketing' data-filter='.marketing')
           | Marketing&nbsp;
           sup #
 
@@ -84,117 +84,47 @@ block content
             +image('img/portfolio/getty_dls_02.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
             h5.portfolio-title: a(href='portfolio-Getty-Digital-Label-System.html') Getty Digital Label System
-            a(href='#').tag-link Prototyping
-            a(href='#').tag-link User Testing
-            a(href='#').tag-link Data
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
+                a(href='#' class='nav-link' data-filter='.data').tag-link Data
 
       // Portfolio Item
-      .grid-item.featured.mobile.prototyping.user-testing.mb-30
+      .grid-item.featured.mobile.prototyping.user-testing.data.mb-30
         .portfolio-card
-          a(href='portfolio-single-wide-slider.html').portfolio-thumb
-            +image('img/portfolio/03.jpg', 'Portfolio Thumbnail')
+          a(href='portfolio-de-Young-Legion-of-Honor-apps.html').portfolio-thumb
+            +image('img/portfolio/famsf_04.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            h5.portfolio-title: a(href='portfolio-single-wide-slider.html') de Young / Legion of Honor
-            a(href='#').tag-link Prototyping
-            a(href='#').tag-link User Testing
+            h5.portfolio-title: a(href='portfolio-de-Young-Legion-of-Honor-apps.html') de Young / Legion of Honor Apps
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
+                a(href='#' class='nav-link' data-filter='.data').tag-link Data
 
       // Portfolio Item
-      .grid-item.mobile-apps.mb-30
+      .grid-item.featured.mobile.marketing.mb-30
         .portfolio-card
-          a(href='portfolio-single-wide-gallery.html').portfolio-thumb
-            +image('img/portfolio/04.jpg', 'Portfolio Thumbnail')
+          a(href='portfolio-Hearst-Castle-app.html').portfolio-thumb
+            +image('img/portfolio/hearst_01.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | Michael Brown
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 43
-            h5.portfolio-title: a(href='portfolio-single-wide-gallery.html') iOS App Development
-            a(href='#').tag-link Mobile Apps
+            h5.portfolio-title: a(href='portfolio-Hearst-Castle-app.html') Hearst Castle App
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.marketing').tag-link Marketing
 
       // Portfolio Item
-      .grid-item.interior-design.mb-30
+      .grid-item.featured.mobile.user-testing.marketing.mb-30
         .portfolio-card
-          a(href='portfolio-single-side-gallery-grid.html').portfolio-thumb
-            +image('img/portfolio/05.jpg', 'Portfolio Thumbnail')
+          a(href='portfolio-Guidekick-app.html').portfolio-thumb
+            +image('img/portfolio/guidekick_app_01.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | Emilia Green
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 27
-            h5.portfolio-title: a(href='portfolio-single-side-gallery-grid.html') Working Space Design
-            a(href='#').tag-link Interior Design
-
-      // Portfolio Item
-      .grid-item.branding.mb-30
-        .portfolio-card
-          a(href='portfolio-single-side-gallery-list.html').portfolio-thumb
-            +image('img/portfolio/07.jpg', 'Portfolio Thumbnail')
-          .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | Emma Johnson
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 116
-            h5.portfolio-title: a(href='portfolio-single-side-gallery-list.html') Apple Package Design
-            a(href='#').tag-link Package Design
-
-      // Portfolio Item
-      .grid-item.interior-design.mb-30
-        .portfolio-card
-          a(href='portfolio-single-wide-slider.html').portfolio-thumb
-            +image('img/portfolio/06.jpg', 'Portfolio Thumbnail')
-          .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | William Smith
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 38
-            h5.portfolio-title: a(href='portfolio-single-wide-slider.html') Wall Shelves Design
-            a(href='#').tag-link Interior Design
-
-      // Portfolio Item
-      .grid-item.branding.mb-30
-        .portfolio-card
-          a(href='portfolio-single-wide-gallery.html').portfolio-thumb
-            +image('img/portfolio/08.jpg', 'Portfolio Thumbnail')
-          .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | Olivia Davis
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 205
-            h5.portfolio-title: a(href='portfolio-single-wide-gallery.html') Bottle &amp; Logo Design
-            a(href='#').tag-link Package Branding
-
-      // Portfolio Item
-      .grid-item.mobile-apps.mb-30
-        .portfolio-card
-          a(href='portfolio-single-side-gallery-grid.html').portfolio-thumb
-            +image('img/portfolio/09.jpg', 'Portfolio Thumbnail')
-          .portfolio-card-body
-            .portfolio-meta
-              span.mr-3
-                i.fe-icon-user
-                | Benjamin Miller
-              a(href='#')
-                i.fe-icon-heart.text-accent
-                | 156
-            h5.portfolio-title: a(href='portfolio-single-side-gallery-grid.html') Watch Interaface Design
-            a(href='#').tag-link Mobile Apps
-
-    .pt-2
+            h5.portfolio-title: a(href='portfolio-Guidekick-apps.html') Guidekick App
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
+                a(href='#' class='nav-link' data-filter='.marketing').tag-link Marketing
 
   //- footer-portfolio.pug template
   include partials/footer-default

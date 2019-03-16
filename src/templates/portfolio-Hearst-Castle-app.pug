@@ -1,0 +1,90 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Hearst Castle App'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/hearst_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "DLS object screen"}').gallery-item.mb-30
+              +image('img/portfolio/hearst_01.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='https://vimeo.com/324010469?autoplay=1&muted=1' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+                  +image('img/portfolio/hearst_05.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/hearst_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "The very first design of the home screen, don’t judge too harshly"}').gallery-item.mb-30
+                  +image('img/portfolio/hearst_08.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/hearst_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Featured on the App Store"}').gallery-item.mb-30
+              +image('img/portfolio/hearst_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/hearst_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "A more recent version of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/hearst_02.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/hearst_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "A more recent version of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/hearst_03.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/hearst_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "One of the banners marketing the app in the visitor center"}').gallery-item.mb-30
+              +image('img/portfolio/hearst_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/hearst_09.jpg' data-fancybox='sideGallery' data-options='{"caption": "App on Google Glass"}').gallery-item.mb-30
+                  +image('img/portfolio/hearst_09.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/hearst_10.jpg' data-fancybox='sideGallery' data-options='{"caption": "App on Google Glass"}').gallery-item.mb-30
+                  +image('img/portfolio/hearst_10.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/hearst_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "A bonus of working with Hearst Castle, you get to jump into the Neptune Pool!"}').gallery-item.mb-30
+              +image('img/portfolio/hearst_07.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span Hearst Castle, California State Parks
+            li
+              a(href='http://hearstcastle.org' target='_blank').navi-link.font-weight-medium www.hearstcastle.org
+            li
+              span San Simeon, CA
+        .widget
+          h2.widget-title Objective
+          p Create a digital, personal tour guide for the outdoor area of the Hearst Castle.
+        .widget
+          h2.widget-title Result
+          p A downloadable mobile app on iOS and Android, which are location-aware, and narrated by Hearst Castle’s Chief Historian. 
+        .widget
+          h2.widget-title Description
+          p The Hearst Castle project was the very beginning of a grand journey. It was the first project we pitched commercially after the epiphany in South America (read the <a href="story.html">Story</a> if you haven’t already). When we initially met with Hoyt Fields, the Museum Director, he was ecstatic. It was exactly what he was looking to do, and from day 1 he was the ultimate project champion. We searched the onsite library for design inspiration and audio recordings of <a href="https://en.wikipedia.org/wiki/William_Randolph_Hearst" target="_blank">William Randolph Hearst’s</a> guests at the Castle. We interviewed Victoria Kaster, Chief Historian, and the voice and written word of the app. The Hearst Castle app included many firsts for us in user experience, design, and development. Most notably was the ability to hold the device up to your ear to automatically play audio, privately out of the earpiece. At that point, we had never seen another app provide that kind of functionality. Upon launching the app, it was almost immediately featured on the front page of the App Store and we were beyond excited.
+          p To date, the Hearst Castle app has about 150,000 downloads, and is one of our most successful projects. A large part of that success (we think), is due to effective marketing. Hoyt and the administration at the time were very supportive of marketing the app to visitors, so we designed large stand-up banners, bus banners, a widget for the website, and included a QR code download link on all printed maps.
+          p After the Hearst Castle app had been live for about a year, we developed the first museum experience on Google Glass (R.I.P.). Limitations of technology/hardware aside, the application of it was truly awesome. Look at an object, and tap to hear information about it. It was really that simple!
+        .widget
+          h2.widget-title My Roles
+          p.mb-0 Design, prototyping, user testing, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

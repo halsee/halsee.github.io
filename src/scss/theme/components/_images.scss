@@ -6,8 +6,6 @@
 .figure {
   position: relative;
   padding: .9375rem;
-  background-color: $white;
-  box-shadow: $card-box-shadow;
   > .badge {
     position: absolute;
     top: 1.5rem;
@@ -21,4 +19,8 @@
   width: 100%;
   margin-bottom: .9375rem;
 }
-.figure-caption { font-weight: 600; }
+.figure-caption { 
+  font-weight: 600;
+  font-size: .9rem;
+  color: $gray-500; 
+}

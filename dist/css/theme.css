@@ -10626,9 +10626,6 @@ dd:last-child {
 .figure {
   position: relative;
   padding: .9375rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64, 64, 64, 0.09);
-  box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64, 64, 64, 0.09);
 }
 
 .figure > .badge {
@@ -10647,6 +10644,8 @@ dd:last-child {
 
 .figure-caption {
   font-weight: 600;
+  font-size: .9rem;
+  color: #8c8c8c;
 }
 
 kbd {

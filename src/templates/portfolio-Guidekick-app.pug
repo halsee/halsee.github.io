@@ -1,0 +1,50 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Guidekick App'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=ONXClW4KTmc' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/guidekick_app_01.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Objective
+          p Create the next-generation digital tour guide.
+        .widget
+          h2.widget-title Result
+          p A mobile app for visitors of San Francisco, with detailed guides for Alcatraz, Golden Gate Bridge, Golden Gate Park, the Sutro Baths. 
+        .widget
+          h2.widget-title Description
+          p The Guidekick app was the grand vision. It was the “let’s take on Lonely Planet” idea (I still think an idea like this has huge potential). After some initial research, and before we built anything, we sent out a survey to as many people as we could. The intent was to gauge interest about the general idea and whether people experienced similar frustrations to the ones we had with a lack of contextual information while visiting historical sites. 350 people responded and the consensus was “yes”, there seemed to be a place for this kind of product to exist and hopefully thrive. We built and launched the Hearst Castle app as a pilot to the grand vision.
+          p After moving to the Bay Area, we started creating guides for San Francisco’s biggest attractions. The experts of these places had the depth of knowledge and stories, so we sought them out and interviewed them. Each guide was the curated result of a mass collection of audio tracks, text, photos, videos, and more. We also created and modeled a custom 3D map for each location, which depicted historical architecture of the attraction. For example, the Sutro Baths today is dust and rubble, but we recreated how it looked during its heyday in the early 1900s. Similar treatment was given to the Golden Gate Bridge, where you can switch between how it looks today, and how it looked during its construction. The ultimate intent was to give each visitor the feeling of being transported back in time, and to truly understand the history and significance of each magical place.
+          p In addition to testing the app with friends, family, and sometimes even strangers, we screened and recruited people to test with. I sat down with each one and went through a series of open ended questions, measuring everything from usability and functionality, to clarity and how fun it was to use in general. 
+          p On the release of version 1, each guide had anywhere between 20-50 points of interest, with content written and narrated exclusively for the app. We marketed the app around the city, partnering with various organizations from the de Young Museum to Louis’ Restaurant next to the Sutro Baths. We monetized the app by selling in-app guides. Converting app users to paying customers was high, about 10% (an app considered successful at the time had about 2-3% conversion). The scale needed for mass commercial success is a different story, but app was well received with the public and had some great press.
+
+        .widget
+          h2.widget-title My Roles
+          p Design, prototyping, user testing, quality assurance, audio editing
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
