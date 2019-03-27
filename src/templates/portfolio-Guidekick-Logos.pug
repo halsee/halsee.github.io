@@ -1,0 +1,58 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Guidekick Logos'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_logo_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "Guidekick logo, version 3"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_logo_07.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/guidekick_logo_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Initial sketches for version 3"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_logo_02.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/guidekick_logo_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Initial sketches for version 3"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_logo_01.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_logo_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Digital concepts for version 3"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_logo_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_logo_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "Guidekick logo, version 2"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_logo_05.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_logo_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Digital concepts for version 2"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_logo_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_logo_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Guidekick logo, version 1. What is this, a candy wrapper?!"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_logo_03.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Description
+          p The first version of the logo is gross, don’t look at it. That was the “10-minute we just need a logo” version. The second version definitely got more care and attention. I aimed to make it look modern, simple, and professional. Source Sans Pro Regular was the chosen font, and the logomark “double arrow” represents guiding, directions, wayfinding, etc.
+          p The third version of the logo has the most love put into it. I went back to the roots of the original idea, starting in South America (<a href="story.html">Story</a> for relevance). I looked for inspiration within Inca mythology and found Viracocha, the great creator god. I modeled the logomark after the face of Viracocha. The font used was Klavika Bold Condensed, which I adapted to look slightly more tribal. I liked the idea of using an abstract face because a face always tells a story. In this case, it tells the more personal story of our journey.
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
