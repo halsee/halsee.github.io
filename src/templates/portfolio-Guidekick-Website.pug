@@ -1,0 +1,54 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Guidekick Website'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_website_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Home page, above the fold"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_website_01.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=6PuGnMvuP_0' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/famsf_14.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_website_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Screenshot of the entire home page"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_website_02.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Link
+          ul.list-unstyled.mb-0
+            li
+              a(href='http://guidekick.co/' target='_blank').navi-link.font-weight-medium www.guidekick.co
+        .widget
+          h2.widget-title Objective
+          p Design, test, and develop a website to reflect our company and offerings.
+        .widget
+          h2.widget-title Description
+          p This was the 6th, and largest, redesign of the Guidekick website. Although most of our products had been built for museums up to this point, we were now targeting institutions of all kinds. As a team, we first came up with primary content we thought should be communicated. I designed an initial version of that, and created an interactive prototype in Marvel (<a href="https://marvelapp.com/" target="_blank">marvelapp.com</a>). With that prototype, I tested with candidates from UserTesting (<a href="https://www.usertesting.com/" target="_blank">usertesting.com</a>). Some screener questions ensured the testers were part of our target audience, and a set of tasks and questions gauged how well they understood what Guidekick offers. After reviewing feedback and iterating, I developed the site and we pushed it live. We decided to keep the video as it was still relevant and gave the brand credibility. Without much outbound marketing, we’ve had a consistent amount of inbound leads generated from the website.
+        .widget
+          h2.widget-title My Roles
+          p Design, front-end development, writing, prototyping, user testing, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

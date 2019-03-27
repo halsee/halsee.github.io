@@ -1,0 +1,74 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Go Make It Rain'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/make_it_rain_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Marketing banner for the Go Make It Rain app (the website is offline)"}').gallery-item.mb-30
+              +image('img/portfolio/make_it_rain_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=MQZjNwsyuKQ' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/make_it_rain_09.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/make_it_rain_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Pop-culture version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_01.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/make_it_rain_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Pop-culture version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_02.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/make_it_rain_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Pop-culture version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_03.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/make_it_rain_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "Hacking-themed version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_05.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/make_it_rain_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Hacking-themed version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_06.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/make_it_rain_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "Hacking-themed version screenshot of the app"}').gallery-item.mb-30
+                  +image('img/portfolio/make_it_rain_07.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/make_it_rain_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "One of our first scrum boards! It wasn’t very expandable, but it was made of post-it notes, and we loved it"}').gallery-item.mb-30
+              +image('img/portfolio/make_it_rain_08.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Objective
+          p Give people the power to make it rain!
+        .widget
+          h2.widget-title Result
+          p A mobile app for iOS and Android that gives people the power to make it rain, of course. 
+        .widget
+          h2.widget-title Description
+          p Okay… it was a silly idea, and might be controversial in today’s topics, but we were college kids who just wanted to build something fun and interesting. And it brought a lot of laughs to many people. That’s considered a success in my book! We also got to develop some advanced augmented reality technology during a time when augmented reality was just starting to be a buzzword. It started as a hacking-themed game and evolved into a version more commonly associated with pop culture. So far it’s had 250,000+ downloads. That’s a lot of people who love to make it rain!
+        .widget
+          h2.widget-title My Roles
+          p Design, prototyping, user testing, quality assurance, videography, animation, level building
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

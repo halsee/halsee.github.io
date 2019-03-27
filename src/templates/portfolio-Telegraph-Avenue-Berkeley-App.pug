@@ -1,0 +1,87 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Telegraph Avenue Berkeley App'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/telegraph_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_08.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/telegraph_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_06.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/telegraph_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_07.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/telegraph_09.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_09.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/telegraph_10.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_10.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/telegraph_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_05.jpg', 'Gallery Image')  
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/telegraph_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Telegraph app launch party at Moe’s Books"}').gallery-item.mb-30
+              +image('img/portfolio/telegraph_03.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/telegraph_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Marketing banner at the launch event"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_04.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/telegraph_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Marketing banner on Telegraph Avenue"}').gallery-item.mb-30
+                  +image('img/portfolio/telegraph_02.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span Telegraph Business Improvement District
+            li
+              a(href='http://www.telegraphberkeley.org' target='_blank').navi-link.font-weight-medium www.telegraphberkeley.org
+            li
+              span Berkeley, California
+        .widget
+          h2.widget-title Objective
+          p Enable Berkeley visitors to take self-guided tours of the historic Telegraph Avenue.
+        .widget
+          h2.widget-title Result
+          p A downloadable mobile app for iOS and Android that displays a map of Telegraph Avenue and surrounding streets with narrated audio and text stops along the way. 
+        .widget
+          h2.widget-title Description
+          p The Telegraph Avenue project was special for a number of reasons. We were living in Berkeley at the time of creating the app, so it was already home to us. Telegraph Ave also has many powerful stories that have taken place there, including the birth of the Free Speech Movement. 
+          p It was the first guide we created that needed a map of the streets, rather than solely an indoor space. I designed the theme with Mapbox (<a href="https://www.mapbox.com/" target="_blank">mapbox.com</a>) and we were able to import that into Unity (<a href="https://unity.com/" target="_blank">unity.com</a>) and still retain the 3D look and feel. We also had some custom models created for specific buildings that were part of the architecture stops in the app. 
+          p When the app was finished, TBID organized a fantastic launch event at Moe’s Books on Telegraph Ave. Guest speakers included locals who were firsthand witnesses and participants to the events that unfolded there in the 1960s and ‘70s. They were the same speakers who narrated stories within the app. Permanent marketing exists on Telegraph Avenue, promoting the app to visitors.
+        .widget
+          h2.widget-title My Roles
+          p.mb-0 Design, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

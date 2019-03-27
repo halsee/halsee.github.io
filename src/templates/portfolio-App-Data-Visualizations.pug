@@ -1,0 +1,64 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'App Data Visualizations'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_1.jpg' data-fancybox='sideGallery' data-options='{"caption": "One version of the data overview"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_1.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_3.jpg' data-fancybox='sideGallery' data-options='{"caption": "Visualizing how user engagement with art (or other points of interest) could look"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_3.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_4.jpg' data-fancybox='sideGallery' data-options='{"caption": "Demographic information"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_4.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_2.jpg' data-fancybox='sideGallery' data-options='{"caption": "Heatmap and visitor path visualizations"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_2.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/guidekick_analytics_6.jpg' data-fancybox='sideGallery' data-options='{"caption": "Guidekick Command Center"}').gallery-item.mb-30
+              +image('img/portfolio/guidekick_analytics_6.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_5.jpg' data-fancybox='sideGallery' data-options='{"caption": "Alternate version of the data overview"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_5.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/guidekick_analytics_7.jpg' data-fancybox='sideGallery' data-options='{"caption": "App analytics summary email"}').gallery-item.mb-30
+                  +image('img/portfolio/guidekick_analytics_9.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Description
+          p These are various designs that show how data from the Guidekick apps can be visualized for us and for clients. Some parts of these were developed and put into production. For example, the app analytics summary email was sent weekly to each of our respective clients. At a later phase, a dashboard with more detailed data was developed and linked in those emails. The Guidekick Command Center (it has the purple background) was also developed, but as an internal tool. We had been looking for ways to feel more connected to users of our apps on a day-to-day basis, and by building this we were able to see that the apps we built were consistently being used by people in many different places. We put the command center up on a monitor that we’d see every morning, so it was a great way to start the day knowing that people were getting value out of the things we created.
+        .widget
+          h2.widget-title My Roles
+          p Design, front-end development
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

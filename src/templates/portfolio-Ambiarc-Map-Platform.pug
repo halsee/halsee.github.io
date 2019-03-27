@@ -1,0 +1,55 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Ambiarc Map Platform'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/ambiarc_platform_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Demo of heatmap integration"}').gallery-item.mb-30
+              +image('img/portfolio/ambiarc_platform_01.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=yGwfpP0Jpxs' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/ambiarc_platform_02.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/ambiarc_platform_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "The Ambiarc web tool, an simple interface for placing and managing points on the map, colors, and other data"}').gallery-item.mb-30
+              +image('img/portfolio/ambiarc_platform_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/ambiarc_platform_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "An end-user experience built with an Ambiarc backend, in this case the Indianapolis Airport experience"}').gallery-item.mb-30
+              +image('img/portfolio/ambiarc_platform_03.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Objective
+          p Create a tool which makes modeling, managing, and integrating an indoor 3D map easy.
+        .widget
+          h2.widget-title Result
+          p Ambiarc! It literally does all of those things listed above.
+        .widget
+          h2.widget-title Description
+          p Ambiarc was created partly out of a necessity to make the creation of our own Guidekick apps more efficient. It was also created with the intent of becoming a platform that others could use to create and manage 3D maps. Previously, we were custom modeling, texturing, and managing each 3D map for each guide and app. While the maps looked fabulous, we needed a more streamlined process and quicker way to get a map created and functional within each app. As it exists right now, you feed Ambiarc a single, or set of, GeoJSON files derived from floor plans. With that data it automatically maps out the space in 3D. Import that map into a custom tool we created, and you can do all sorts of neat (and useful) things like add points to the map, create labels, add interactivity, change the color scheme, and a lot more. The map is platform agnostic, so it can be integrated into a project for web, mobile, touchscreen, or even augmented or virtual reality. A Javascript SDK allows the map experience to be customized even further. <a href="http://ambiarc.com/docs/" target="_blank">Full documentation</a> // <a href="https://github.com/Ambiarc" target="_blank">Github</a>
+        .widget
+          h2.widget-title My Roles
+          p Design, product strategy, business strategy
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

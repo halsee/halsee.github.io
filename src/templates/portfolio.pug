@@ -3,12 +3,13 @@ extends partials/layout
 //- Override default config variables
 append config
   - var navbarTemplate = 'navbar-simple'
+  - var isPageTitle = false
   - var pageTitle = 'Portfolio'
   - var parentMenu = 'Portfolio'
 
 //- Page Content
 block content
-  .container.pb-5.px-3.mb-3
+  .container.py-5.px-3.mb-3.mt-5
     
     // Filters
     ul(class='nav nav-tabs item-filter nav-tabs-style-2 mb-4')
@@ -93,10 +94,10 @@ block content
       // Portfolio Item
       .grid-item.featured.mobile.prototyping.user-testing.data.mb-30
         .portfolio-card
-          a(href='portfolio-de-Young-Legion-of-Honor-apps.html').portfolio-thumb
+          a(href='portfolio-de-Young-Legion-of-Honor-Apps.html').portfolio-thumb
             +image('img/portfolio/famsf_04.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            h5.portfolio-title: a(href='portfolio-de-Young-Legion-of-Honor-apps.html') de Young / Legion of Honor Apps
+            h5.portfolio-title: a(href='portfolio-de-Young-Legion-of-Honor-Apps.html') de Young / Legion of Honor Apps
             .filer-grid
               .nav-tabs
                 a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
@@ -104,27 +105,113 @@ block content
                 a(href='#' class='nav-link' data-filter='.data').tag-link Data
 
       // Portfolio Item
-      .grid-item.featured.mobile.marketing.mb-30
+      .grid-item.featured.mobile.user-testing.marketing.mb-30
         .portfolio-card
-          a(href='portfolio-Hearst-Castle-app.html').portfolio-thumb
+          a(href='portfolio-Hearst-Castle-App.html').portfolio-thumb
             +image('img/portfolio/hearst_01.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            h5.portfolio-title: a(href='portfolio-Hearst-Castle-app.html') Hearst Castle App
+            h5.portfolio-title: a(href='portfolio-Hearst-Castle-App.html') Hearst Castle App
             .filer-grid
               .nav-tabs
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
                 a(href='#' class='nav-link' data-filter='.marketing').tag-link Marketing
 
       // Portfolio Item
       .grid-item.featured.mobile.user-testing.marketing.mb-30
         .portfolio-card
-          a(href='portfolio-Guidekick-app.html').portfolio-thumb
+          a(href='portfolio-Guidekick-App.html').portfolio-thumb
             +image('img/portfolio/guidekick_app_13.jpg', 'Portfolio Thumbnail')
           .portfolio-card-body
-            h5.portfolio-title: a(href='portfolio-Guidekick-app.html') Guidekick App
+            h5.portfolio-title: a(href='portfolio-Guidekick-App.html') Guidekick App
             .filer-grid
               .nav-tabs
                 a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
                 a(href='#' class='nav-link' data-filter='.marketing').tag-link Marketing
+      
+      // Portfolio Item
+      .grid-item.featured.mb-30
+        .portfolio-card
+          a(href='portfolio-Ambiarc-Map-Platform.html').portfolio-thumb
+            +image('img/portfolio/ambiarc_platform_01.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Ambiarc-Map-Platform.html') Ambiarc Map Platform
+
+      // Portfolio Item
+      .grid-item.mobile.mb-30
+        .portfolio-card
+          a(href='portfolio-Apple-Watch-Museum-Experience.html').portfolio-thumb
+            +image('img/portfolio/apple_watch_02.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Apple-Watch-Museum-Experience.html') Apple Watch Museum Experience
+
+      // Portfolio Item
+      .grid-item.web.touchscreen.prototyping.mb-30
+        .portfolio-card
+          a(href='portfolio-Indianapolis-Airport-Digital-Experience.html').portfolio-thumb
+            +image('img/portfolio/ind_airport_05.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Indianapolis-Airport-Digital-Experience.html') Indianapolis Airport Digital Experience
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
+
+      // Portfolio Item
+      .grid-item.mobile.marketing.mb-30
+        .portfolio-card
+          a(href='portfolio-Telegraph-Avenue-Berkeley-App.html').portfolio-thumb
+            +image('img/portfolio/telegraph_01.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Telegraph-Avenue-Berkeley-App.html') Telegraph Avenue Berkeley App
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.marketing').tag-link Marketing
+
+      // Portfolio Item
+      .grid-item.web.prototyping.user-testing.mb-30
+        .portfolio-card
+          a(href='portfolio-Guidekick-Website.html').portfolio-thumb
+            +image('img/portfolio/guidekick_website_01.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Guidekick-Website.html') Guidekick Website
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.prototyping').tag-link Prototyping
+                a(href='#' class='nav-link' data-filter='.user-testing').tag-link User Testing
+
+      // Portfolio Item
+      .grid-item.web.data.design.mb-30
+        .portfolio-card
+          a(href='portfolio-App-Data-Visualizations.html').portfolio-thumb
+            +image('img/portfolio/guidekick_analytics_8.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-App-Data-Visualizations.html') App Data Visualizations
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.data').tag-link Data
+      
+      // Portfolio Item
+      .grid-item.touchscreen.web.mb-30
+        .portfolio-card
+          a(href='portfolio-Asian-Art-Museum-Tomb-Treasures.html').portfolio-thumb
+            +image('img/portfolio/aam_tomb_05.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Asian-Art-Museum-Tomb-Treasures.html') Asian Art Museum Tomb Treasures
+
+      // Portfolio Item
+      .grid-item.mobile.mb-30
+        .portfolio-card
+          a(href='portfolio-Go-Make-It-Rain-App.html').portfolio-thumb
+            +image('img/portfolio/make_it_rain_04.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Go-Make-It-Rain-App.html') Go Make It Rain App
+
+      // Portfolio Item
+      .grid-item.fun.mb-30
+        .portfolio-card
+          a(href='portfolio-Third-Degree-Game.html').portfolio-thumb
+            +image('img/portfolio/third_degree_03.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Third-Degree-Game.html') Third Degree Game
 
   //- footer-portfolio.pug template
   include partials/footer-default

@@ -1,0 +1,74 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Third Degree Game'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/third_degree_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "A test subject on the simulation table"}').gallery-item.mb-30
+              +image('img/portfolio/third_degree_03.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=sbp2Gg2WT0Q' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/third_degree_08.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/third_degree_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "Game environment reflecting (mostly) 1860s London"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_07.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/third_degree_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Game environment transitioning to the futuristic London"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/third_degree_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Early sketch of the alien species, created by one of the artists"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_01.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/third_degree_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Revised versions of the alien species"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_02.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/third_degree_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Early sketch of London environment, created by one of the artists"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_04.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/third_degree_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "Early sketch of London environment, created by one of the artists"}').gallery-item.mb-30
+                  +image('img/portfolio/third_degree_05.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Objective
+          p Design and develop a video game as a collaborative senior project.
+        .widget
+          h2.widget-title Result
+          p A PC-based, 3D, side-scrolling, adventure game called Third Degree.
+        .widget
+          h2.widget-title Description
+          p Dark title aside, Third Degree was a joy to work on, and brought together about 25 talented developers, designers, modelers, audio engineers, and even the university improvisational comedy team for story writing and voice acting. The physics engine was developed from scratch, and everything was custom designed for the game.
+          p The game follows the story of a convict kept in confinement who is given a chance at redemption through a special testing program. A recent alien artifact has crash landed on the Earth’s surface, and a panel of scientists is conducting specialized experiments to find out what it does. The convict is one in a line of test subjects given a chance of freedom through experimentation. When the artifact is fitted on the convict’s head, he is put in some kind of virtual environment that resembles London in the 1860s. The convict, though determined to gain his freedom, soon feels the grasp of insanity closing in around him, and the only way out is to either finish the virtual simulation, or die trying.
+        .widget
+          h2.widget-title My Roles
+          p Design, animation, level building, story writing, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

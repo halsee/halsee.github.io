@@ -11,9 +11,11 @@ append config
   - var parentMenu = 'Home'
   - var menuTitle = "Home"
 
-
 //- Page Content
 block content
+
+  section.rainWrapper
+    <i class="rain"></i>
 
   // Hero
   section.bg-white.text-center
@@ -21,10 +23,12 @@ block content
       .col.py-0.py-md-5
         .row.justify-content-center
           h2.text-lg.text-uppercase You made it!
-        .row.justify-content-center.pb-3
+        .row.justify-content-center.pb-2
           h1.display-4.font-weight-normal I'm so happy you're here
-        .row.justify-content-center
-          h2.text-lg.font-weight-normal Welcome, and please come in from out of that rain...
+        .row.justify-content-center.tagline
+          h2.text-lg.font-weight-normal Welcome, and please <a href="#" class="btn btn-style-4 btn-light d-inline-block come-in" data-parallax='{"scale" : 0.1}'>come in</a> from out of that rain...
+        //-
+          h2.text-lg.font-weight-normal <span class="textLeft">Welcome, and please<span class="fadingEffectLeft"></span></span> <span class="textRight"><a href="#" class="btn btn-style-4 btn-light d-inline-block come-in" data-parallax='{"scale" : 0.1}'>come in</a> from out of that rain...<span class="fadingEffectRight"></span></span>
 
   section.text-center
     .container.pt-5.justify-content-center
@@ -35,8 +39,8 @@ block content
               div.circle-shape-example
                 img(src="img/img_josh.png" alt="photo of Josh").portrait.my-3
                 p.mb-4 It’s a pleasure to meet you. I’m Josh, a designer living in the bay area of California. Before you look around, I suggest first reading a story. The words “us” and “we” are used generously here, so aren't you super curious to know who that is?!
-              a(href='/story.html').btn.btn-style-4.btn-light.d-inline-block.mx-1 Story
-              a(href='/portfolio.html').btn.btn-style-4.btn-light.d-inline-block.mx-1 Portfolio
+              a(href='story.html').btn.btn-style-4.btn-light.d-inline-block.mx-1 Story
+              a(href='portfolio.html').btn.btn-style-4.btn-light.d-inline-block.mx-1 Portfolio
         .col
     //- footer-blog.pug template
     include partials/footer-default

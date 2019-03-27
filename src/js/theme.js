@@ -17,6 +17,32 @@ jQuery(function($) {
     });
   }
 	emptyLink('a[href="#"]');
+
+
+	// Rain animates to sunshine
+	//------------------------------------------------------------------------------
+	function rain(){
+		var rainDrop = $('.rain');
+		for (var i = 0; i < 199; i++){
+			rainDrop.clone().insertAfter(rainDrop);
+		}
+	}
+	rain();
+
+	function sun(){
+		var tagline = $('.tagline');
+		var rain = $('.rain');
+		var rainGoAway = function () {
+			$(tagline).animate({opacity:0, height:0}, function(){
+				$(this).remove();
+			});
+			$(rain).fadeOut(300, function(){
+				$(this).remove();
+			});
+		}
+		$('.come-in').on('click', rainGoAway)
+	}
+	sun();
   
 	
 	// Sticky Navbar

@@ -1,0 +1,78 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Apple Watch Museum Experience'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='https://vimeo.com/324895832?autoplay=1&muted=1' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/apple_watch_05.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/apple_watch_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "List of tours that can be started"}').gallery-item.mb-30
+                  +image('img/portfolio/apple_watch_01.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/apple_watch_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Notification for when artwork is nearby"}').gallery-item.mb-30
+                  +image('img/portfolio/apple_watch_02.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/apple_watch_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Playing an audio track from the Watch"}').gallery-item.mb-30
+                  +image('img/portfolio/apple_watch_03.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/apple_watch_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Updated tour progress"}').gallery-item.mb-30
+                  +image('img/portfolio/apple_watch_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/apple_watch_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screen flow"}').gallery-item.mb-30
+              +image('img/portfolio/apple_watch_06.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span Fine Arts Museums of San Francisco
+            li
+              a(href='https://www.famsf.org/' target='_blank').navi-link.font-weight-medium www.famsf.org
+            li
+              span San Francisco, California
+        .widget
+          h2.widget-title Objective
+          p Extend the de Young app to the Apple Watch.
+        .widget
+          h2.widget-title Result
+          p A de Young companion app for the Apple Watch, allowing a user to be notified of nearby artwork, play audio, and see tour progress from the Watch.
+        .widget
+          h2.widget-title Description
+          p Around the time of launching the de Young app, Apple was getting ready for a marketing push of the Apple Watch. We had established a developer relationship with them since launching the Hearst Castle app, but the success of the de Young app reignited that. After talking with Apple, it became clear that developing the Apple Watch companion for the de Young app would be a good idea, so we jumped at the opportunity to build something new and exciting. During a fast-paced few weeks we designed and built the Watch app to coincide with the de Young’s new special exhibition, <i>Oscar de la Renta: The Retrospective</i>. We quickly installed iBeacons throughout the exhibition and fine-tuned them for accurate notifications when approaching different stops. The user would be notified when they approached a featured stop with audio and presented with the ability to play audio from the Watch, assuming the user had bluetooth-connected headphones. 
+          p Before public launch of the Watch app, Apple held a press day at the de Young in the exhibition space featuring the app. The response was positive, and showcased how the Watch could act as an intuitive tour guide, encouraging focus on the artwork and less on looking down at a screen.
+        .widget
+          h2.widget-title Press
+          p <a href="https://www.fastcompany.com/3058484/the-apple-watch-was-my-guide-through-the-oscar-de-la-renta-gown-exhibit-in-sf" target="_blank">Fast Company article</a>
+        .widget
+          h2.widget-title My Roles
+          p Design, prototyping, user testing, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default

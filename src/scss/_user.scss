@@ -81,8 +81,8 @@ p a:hover{
 		font-family: cortado, sans-serif;
 		font-style: normal;
 		font-weight: 400;
-		background: -webkit-linear-gradient(0deg, #007ADF, #00E1D0);
-		  -webkit-background-clip: text;
+		background: -webkit-linear-gradient(0deg, $gradient-start, $gradient-end);
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		line-height:normal !important;
 	}
@@ -90,6 +90,95 @@ p a:hover{
 	.portrait{
 		max-width: 120px;
 	}
+
+	// Rain Animation
+	.rainWrapper{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.rain {
+		@extend .bg-gradient-vertical;
+		height: 15px;
+		position: absolute;
+		width:2px;
+	}
+	
+	$rain: 200;
+	
+	@for $i from 1 through $rain {
+		$top: (random(50) + 50) * 1%;
+		$left: random(100) * 1%;
+		$opacity: (random(30) + 30) * 0.01;
+		$delay: random(10) - 1s;
+	
+		.rain:nth-of-type(#{$i}) {
+			animation-name: rain-#{$i};
+			animation-delay: $delay;
+			animation-duration: random(3) + 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			left: $left;
+			opacity: 0.5;
+			top: -$top;
+		}
+	
+		@keyframes rain-#{$i} {
+			0% {
+				left: $left;
+				top: -$top;
+			}
+			100% {
+				top: 150%;
+			}
+		}
+	}
+
+	/*
+	// Slide out tagline
+	.textLeft, .textRight {
+		display:inline-block;
+			position:relative;
+			line-height:2em;
+			overflow:hidden;
+			width:auto;
+			margin:0 auto;
+			padding: 1rem 0 2rem;
+	}
+
+	.textLeft{
+		height:44px;
+	}
+
+	.fadingEffectLeft, .fadingEffectRight{
+		position:absolute;
+		width:100%;
+		background:white;
+		z-index: 2;
+	}
+
+	.fadingEffectLeft {
+			top:0; bottom:0; right:0;
+			animation: showHideLeft 2s linear alternate infinite;
+	}
+
+	.fadingEffectRight {
+			top:0; bottom:0; left:0;
+			animation: showHideRight 2s linear alternate infinite;
+	}
+	
+	@keyframes showHideLeft {
+			0% {width:0%}
+			100% {width:100%;}
+	}
+	
+	@keyframes showHideRight {
+			0% {width:0%}
+			100% {width:100%;}
+	}
+	*/
 }
 
 // PORTFOLIO - MAIN

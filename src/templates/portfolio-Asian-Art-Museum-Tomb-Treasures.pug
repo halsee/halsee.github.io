@@ -1,0 +1,87 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Asian Art Museum Wayfinding Kiosk'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=tL0x7bbCh38' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/aam_tomb_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://www.youtube.com/watch?v=eXM_mK8DnSk' data-fancybox='sideGallery' data-width="1000" data-height="563").gallery-item.type-video.mb-30
+              +image('img/portfolio/aam_tomb_07.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/aam_tomb_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Both mausoleums"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_06.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/aam_tomb_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Tombs 1 and 2 within the main mausoleum"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_02.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/aam_tomb_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Main tomb of Liu Fei"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_03.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/aam_tomb_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Tomb burial objects"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/aam_tomb_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "The jade suit burial object"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_05.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/aam_tomb_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Visitors using the touchscreen in the exhibition"}').gallery-item.mb-30
+                  +image('img/portfolio/aam_tomb_01.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span Asian Art Museum
+            li
+              a(href='http://www.asianart.org/' target='_blank').navi-link.font-weight-medium www.asianart.org
+            li
+              span San Francisco, California
+        .widget
+          h2.widget-title Objective
+          p Enable museum visitors and the public to learn about the museum’s special exhibition, Tomb Treasures.
+        .widget
+          h2.widget-title Result
+          p A touchscreen device and website showcasing a 3D recreation of Tomb 1 at Dayun Mountain in China, the tomb of Liu Fei, King of Jiangdu (153-128 BCE).
+        .widget
+          h2.widget-title Description
+          p China’s Han dynasty was one of the most powerful civilizations of the ancient world, and the tomb of Liu Fei had been rediscovered almost 2000 years after its creation. For this reason, it was an incredibly exciting project to work on and learn about. The tombs were intended to hold the bodies of nobility, as well as every possible thing they might need in the afterlife: utensils, vessels, royal symbols, weaponry, money, and much more. The experience highlights 12 different areas of the tomb, showcasing specific objects that were discovered and on display in the exhibition. The 3D recreation was a great way to visualize the tomb and layout, which would have otherwise been very difficult.
+        .widget
+          h2.widget-title My Roles
+          p Design, quality assurance
+        .widget
+          h2.widget-title Link
+          ul.list-unstyled.mb-0
+            li
+              a(href='http://tombtreasures.asianart.org/' target='_blank').navi-link.font-weight-medium tombtreasures.asianart.org
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
