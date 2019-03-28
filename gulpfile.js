@@ -16,14 +16,14 @@ var gulp = require('gulp'),
 // Define reusable paths
 var path = {
   src: 'src',
-  dist: 'dist',
+  dist: 'docs',
   src_pug: 'src/templates',
   src_scss: 'src/scss',
   src_js: 'src/js',
   src_js_vendor: 'src/vendor/js',
   src_css_vendor: 'src/vendor/css',
-  dist_js: 'dist/js',
-  dist_css: 'dist/css',
+  dist_js: 'docs/js',
+  dist_css: 'docs/css',
 }
 
 
@@ -154,7 +154,7 @@ gulp.task('clean', () => {
     path.dist_css,
     path.dist_js,
     path.dist + '/components',
-    path.dist + '/docs',
+    // path.dist + '/docs',
     path.dist + '/*.html'
   ]);
 });
