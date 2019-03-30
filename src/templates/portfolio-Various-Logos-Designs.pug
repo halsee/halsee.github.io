@@ -1,0 +1,146 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Various Logos & Designs'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    // Project Details
+    h1.h4.mb-5.text-center #{pageTitle}
+
+    .isotope-grid.filter-grid.cols-3
+      .gutter-sizer
+      .grid-sizer
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_10.jpg' data-fancybox='sideGallery' data-options='{"caption": "A little character design, just for fun"}')
+              +image('img/portfolio/various_10.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_17.jpg' data-fancybox='sideGallery' data-options='{"caption": "Concept logo"}')
+              +image('img/portfolio/various_17.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "For an AR/VR/Unity meetup group in Berkeley, called Unexpected Uses & Users of Unity. The logo represents an individual being supported by a community, and incorporates the 4 U’s from the group name"}')
+              +image('img/portfolio/various_05.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "For the Hearst Castle mobile app. It represents the two Spanish Bell Towers iconic to the Heart Castle, with a touch of art deco"}')
+              +image('img/portfolio/various_07.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "For a friend’s podcast called Nerd Chat"}')
+              +image('img/portfolio/various_08.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_11.jpg' data-fancybox='sideGallery' data-options='{"caption": "For the Montana de Oro touchscreen experience. The park is located on the central coast of California, so the icon represents the beautiful ocean, hills, and mountains that make up its terrain"}')
+              +image('img/portfolio/various_11.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "For the AlcatrazHistory.com website. Alctraz Island was a maximum-security prison from 1934 to 1963. The key in the negative space was designed after an actual key used on Alcatraz"}')
+              +image('img/portfolio/various_01.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_09.jpg' data-fancybox='sideGallery' data-options='{"caption": "For Ambiarc, a 3D mapping platform. The logomark represents a cube, a basic building block of 3D objects, with a negative space letter “A” shape in the middle"}')
+              +image('img/portfolio/various_09.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "For a friend’s project, a Stellar wallet (XLM = the ticker for Stellar Lumen cryptocurrency) that integrates with Zapier (zap = lightning bolt) to perform automatic transactions"}')
+              +image('img/portfolio/various_04.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "For Dianna Rebbe’s résumé (DR). When she ties her hair back, her profile does actually look like the “R” in the logomark"}')
+              +image('img/portfolio/various_06.jpg', 'Gallery Image')
+      
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_12.jpg' data-fancybox='sideGallery' data-options='{"caption": "Print design for my girlfriend, Dianna (she really wanted it displayed here =). Used Photoshop Sketch on an iPad Pro"}')
+              +image('img/portfolio/various_12.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_18.jpg' data-fancybox='sideGallery' data-options='{"caption": "For the first company we started. The name is derived from a character power in a video game we created. The power was called “fire legs”, and was originally a bug where the character would fly across the screen when attempting to simply jump"}')
+              +image('img/portfolio/various_18.jpg', 'Gallery Image')
+      
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "For an internal tool developed at Amyris, a biotech company. The tool allows researchers to search a DNA database by phenotype and genotype (phe-ge = fi-ji)"}')
+              +image('img/portfolio/various_03.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_14.jpg' data-fancybox='sideGallery' data-options='{"caption": "Poster promoting the FIJI database tool (see previous image)"}')
+              +image('img/portfolio/various_14.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Vector of a clipper plane created for the FIJI poster (see previous image)"}')
+              +image('img/portfolio/various_02.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_19.jpg' data-fancybox='sideGallery' data-options='{"caption": "For a company holiday card. Each person at the studio designed a custom letter to spell out “Creative.” Used Maya to render ambient occlusion realistic lighting and shadows"}')
+              +image('img/portfolio/various_19.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_15.jpg' data-fancybox='sideGallery' data-options='{"caption": "For the Smile and Nod improv comedy club at Cal Poly University. How many ridiculous objects can you spot?"}')
+              +image('img/portfolio/various_15.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_16.jpg' data-fancybox='sideGallery' data-options='{"caption": "For a beach volleyball tournmanet in Pismo Beach, California. These were printed on shirts and engraved on a wood plaque for the tournament winner"}')
+              +image('img/portfolio/various_16.jpg', 'Gallery Image')
+
+      // Grid Item
+      .grid-item.mb-30
+        .portfolio-card
+            a.gallery-item.figure-img.portfolio-thumb(href='img/portfolio/single/various_13.jpg' data-fancybox='sideGallery' data-options='{"caption": "Star Wars fan here. Created as a showcase piece for a program that Mark created. A simple version of Paint, it only allows using circles and squares to paint with. Limited to 4 colors."}')
+              +image('img/portfolio/various_13.jpg', 'Gallery Image')
+
+      
+
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
