@@ -6,10 +6,27 @@
 
  /*global jQuery, iziToast, noUiSlider*/
 
+// Form Validation
+//------------------------------------------------------------------------------
+window.addEventListener('load', function() {
+	// Fetch all the forms we want to apply custom Bootstrap validation styles to
+	var forms = document.getElementsByClassName('needs-validation');
+	// Loop over them and prevent submission
+	var validation = Array.prototype.filter.call(forms, function(form) {
+		form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		}, false);
+	});
+}, false);
+
 jQuery(function($) {
   'use strict';
-  
-  // Disable default link behavior for dummy links that have href='#'
+	
+	// Disable default link behavior for dummy links that have href='#'
   //------------------------------------------------------------------------------
   function emptyLink(target) {
     $(target).on('click', function(e) {
@@ -17,7 +34,6 @@ jQuery(function($) {
     });
   }
 	emptyLink('a[href="#"]');
-
 
 	// Rain animates to sunshine
 	//------------------------------------------------------------------------------
@@ -290,25 +306,6 @@ jQuery(function($) {
 		}
 	}
 	linkedCarousels('.post-cards-carousel', '.post-preview-img-carousel');
-	
-
-	// Form Validation
-	//------------------------------------------------------------------------------
-	window.addEventListener('load', function() {
-		// Fetch all the forms we want to apply custom Bootstrap validation styles to
-		var forms = document.getElementsByClassName('needs-validation');
-		// Loop over them and prevent submission
-		var validation = Array.prototype.filter.call(forms, function(form) {
-			form.addEventListener('submit', function(event) {
-				if (form.checkValidity() === false) {
-					event.preventDefault();
-					event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			}, false);
-		});
-	}, false);
-
 
 	// Interactive Credit Card
 	//------------------------------------------------------------------------------

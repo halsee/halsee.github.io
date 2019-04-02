@@ -10,39 +10,53 @@ append config
 //- Page Content
 block content
   .container.pb-4.mb-2
-
-    // Customer Service
     .row
-      .col-md-7
-        h2.text-muted.opacity-50.mb-30 Customer Service
-      .col-md-5
-        ul.list-icon
-          li.mb-2 
-            i.fe-icon-mail.text-muted
-            a(href='mailto:customer.service@example.com').navi-link.ml-1 customer.service@example.com
-          li.mb-2
-            i.fe-icon-phone.text-muted
-            a(href='tel:108044357260').navi-link.ml-1 #
-          li.mb-2
-            i.fe-icon-clock.text-muted
-            span.ml-1 1 - 2 business days
-    hr.mt-5
+      .col
+      .col-12.col-sm-10.col-md-8.col-lg-7
+        <form id="contact-form" action="https://liveformhq.com/form/4b87e022-9490-4d97-bc2d-ff88643ccb3f" method="POST" accept-charset="utf-8" role=form class="container needs-validation" novalidate>
+          <input type="hidden" name="_utf8" value="✓">
+          <input type="hidden" value="https://www.jbhdesign.com/thank-you.html" name="_redirect" />
 
-    // Tech Support
-    .row.mt-5.pb-3
-      .col-md-7
-        h2.text-muted.opacity-50.mb-30 Tech Support
-      .col-md-5
-        ul.list-icon
-          li.mb-2
-            i.fe-icon-mail.text-muted
-            a(href='mailto:support@example.com').navi-link.ml-1 support@example.com
-          li.mb-2
-            i.fe-icon-phone.text-muted
-            a(href='tel:100331697720').navi-link.ml-1 #
-          li.mb-2
-            i.fe-icon-clock.text-muted
-            span.ml-1 1 - 2 business days
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+            <div class="invalid-feedback">Please enter your name</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" id="email" name="email" required>
+            <div class="invalid-feedback">Please enter an email address</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" required></textarea>
+            <div class="invalid-feedback">Please enter a message</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="g-recaptcha" data-sitekey="6LfWdJsUAAAAAC0LFgluKbMoMMNXgZas-rniAX4K" data-callback="onSubmit"></div>
+
+          <button id="form_submit" type="submit" class="btn btn-secondary mb-3" value="Submit">Submit</button>
+        </form>
+
+        //- Vertically Centered Modal
+        //-
+          div(id="modalCentered" tabindex="-1" role="dialog").modal.fade
+            .modal-dialog.modal-dialog-centered(role="document")
+              .modal-content
+                .modal-header
+                  h4.modal-title Modal title
+                  button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") ×
+                .modal-body
+                  p Modal body text goes here.
+                .modal-footer
+                  button(type="button" class="btn btn-secondary btn-sm" data-dismiss="modal") Close
+      .col
 
   //- footer-default.pug template
   include partials/footer-default

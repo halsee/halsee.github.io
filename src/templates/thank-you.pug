@@ -1,0 +1,22 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'thank-you';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Contact'
+  - var pageTitleBgImage =''
+  - var parentMenu = 'Contact'
+
+//- Page Content
+block content
+  .container.pb-4.mb-2
+    .row
+      .col.text-center
+        p.lead <strong>Thanks for your message. I will respond as soon as possible.</strong>
+        p.lead <strong>~Josh</strong>
+
+  //- footer-default.pug template
+  include partials/footer-default
