@@ -1,0 +1,72 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'National Gallery of Art App'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/nga_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/nga_03.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/nga_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/nga_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/nga_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/nga_05.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/nga_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "App screenshot"}').gallery-item.mb-30
+                  +image('img/portfolio/nga_06.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/nga_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "App icon concepts"}').gallery-item.mb-30
+              +image('img/portfolio/nga_01.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Client
+          ul.list-unstyled.mb-0
+            li
+              span National Gallery of Art
+            li
+              a(href='https://www.nga.gov/' target='_blank').navi-link.font-weight-medium www.nga.gov
+            li
+              span Washington, D.C.
+        .widget
+          h2.widget-title Objective
+          p Design and develop a mobile app for visitors of the National Gallery of Art.
+        .widget
+          h2.widget-title Result
+          p A location-enabled mobile app, currently on iOS, that links with the museum’s collection to highlight 700+ artworks.
+        .widget
+          h2.widget-title Description
+          p The National Gallery of Art is by far the largest space with the largest collection of artwork we have worked with. With over 271,000 square feet (25,200 square meters) of space, and 2,800+ artworks on display, the sheer size and amount of things to see is incredible. Wayfinding was a critical component to get right for this project. Users’ location is based on Apple’s Indoor Positioning technology, which we integrated into the NGA app. While at the museum, the app will show you precisely where you’re located. From there, you’re able to see what’s nearby, with over 700 artworks that have audio, text, and images to explore. The app also displays a list of events, such as guided tours, lectures, film programs, and special exhibitions.
+          p The NGA team performed 3 rounds of user testing internally and with visitors. Using Marvel (<a href="https://marvelapp.com/" target="_blank">marvelapp.com</a>) and Flinto (<a href="https://www.flinto.com/" target="_blank">flinto.com</a>), I created interactive screen flows and animations to simulate some of the UI/UX iterations. The app was just recently released, and we’re very excited to see how it’s adopted!
+        .widget
+          h2.widget-title My Roles
+          p.mb-0 Design, prototyping, quality assurance
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
