@@ -9,56 +9,52 @@ append config
 
 //- Page Content
 block content
-  .container.py-5.px-3.mb-3.mt-5
+  .container.py-5.px-3.mb-3.mt-2
     
     // Filters
     ul(class='nav nav-tabs item-filter nav-tabs-style-2 mb-4')
       li.nav-item
         a(href='#' class='nav-link active all' data-filter='*')
           | All&nbsp;
-          sup #
+          sup 17
       li.nav-item
         a(href='#' class='nav-link featured' data-filter='.featured')
           | Featured&nbsp;
-          sup #
+          sup 6
       li.nav-item
         a(href='#' class='nav-link mobile' data-filter='.mobile')
           | Mobile&nbsp;
-          sup #
+          sup 6
       li.nav-item
-        a(href='#' class='nav-link' data-filter='.web')
+        a(href='#' class='nav-link web' data-filter='.web')
           | Web&nbsp;
-          sup #
+          sup 4
       li.nav-item
-        a(href='#' class='nav-link' data-filter='.touchscreen')
+        a(href='#' class='nav-link touchscreen' data-filter='.touchscreen')
           | Touchscreen&nbsp;
-          sup #
+          sup 4
       li.nav-item
-        a(href='#' class='nav-link' data-filter='.design')
+        a(href='#' class='nav-link design' data-filter='.design')
           | Design&nbsp;
-          sup #
-      li.nav-item
-        a(href='#' class='nav-link' data-filter='.fun')
-          | Fun&nbsp;
-          sup #
+          sup 5
 
     ul(class='nav nav-tabs item-filter sub-filter nav-tabs-style-2 mb-4 mb-md-5')
       li.nav-item
         a(href='#' class='nav-link prototyping' data-filter='.prototyping')
           | Prototyping&nbsp;
-          sup #
+          sup 5
       li.nav-item
         a(href='#' class='nav-link user-testing' data-filter='.user-testing')
           | User Testing&nbsp;
-          sup #
+          sup 6
       li.nav-item
         a(href='#' class='nav-link data' data-filter='.data')
           | Data&nbsp;
-          sup #
+          sup 4
       li.nav-item
         a(href='#' class='nav-link marketing' data-filter='.marketing')
           | Marketing&nbsp;
-          sup #
+          sup 3
 
     // Grid
     .isotope-grid.filter-grid.cols-3
@@ -187,17 +183,6 @@ block content
             h5.portfolio-title: a(href='portfolio-Guidekick-Logos.html') Guidekick Logos
 
       // Portfolio Item
-      .grid-item.web.data.design.mb-30
-        .portfolio-card
-          a(href='portfolio-App-Data-Visualizations.html').portfolio-thumb
-            +image('img/portfolio/guidekick_analytics_8.jpg', 'Portfolio Thumbnail')
-          .portfolio-card-body
-            h5.portfolio-title: a(href='portfolio-App-Data-Visualizations.html') App Data Visualizations
-            .filer-grid
-              .nav-tabs
-                a(href='#' class='nav-link' data-filter='.data').tag-link Data
-
-      // Portfolio Item
       .grid-item.design.mb-30
         .portfolio-card
           a(href='portfolio-Various-Logos-Designs.html').portfolio-thumb
@@ -214,6 +199,25 @@ block content
             h5.portfolio-title: a(href='portfolio-Asian-Art-Museum-Tomb-Treasures.html') Asian Art Museum Tomb Treasures
 
       // Portfolio Item
+      .grid-item.design.mb-30
+        .portfolio-card
+          a(href='portfolio-Coconut-Confections-Brand.html').portfolio-thumb
+            +image('img/portfolio/coconut_05.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Coconut-Confections-Brand.html') Coconut Confections Brand
+
+      // Portfolio Item
+      .grid-item.web.data.design.mb-30
+        .portfolio-card
+          a(href='portfolio-App-Data-Visualizations.html').portfolio-thumb
+            +image('img/portfolio/guidekick_analytics_8.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-App-Data-Visualizations.html') App Data Visualizations
+            .filer-grid
+              .nav-tabs
+                a(href='#' class='nav-link' data-filter='.data').tag-link Data
+      
+      // Portfolio Item
       .grid-item.mobile.mb-30
         .portfolio-card
           a(href='portfolio-Go-Make-It-Rain-App.html').portfolio-thumb
@@ -222,7 +226,7 @@ block content
             h5.portfolio-title: a(href='portfolio-Go-Make-It-Rain-App.html') Go Make It Rain App
 
       // Portfolio Item
-      .grid-item.fun.mb-30
+      .grid-item.design.mb-30
         .portfolio-card
           a(href='portfolio-Third-Degree-Game.html').portfolio-thumb
             +image('img/portfolio/third_degree_03.jpg', 'Portfolio Thumbnail')

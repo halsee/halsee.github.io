@@ -1,0 +1,54 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Alcatraz History Website'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/alcatraz_website_02.jpg' data-fancybox='sideGallery' data-options='{"caption": "Home page"}').gallery-item.mb-30
+              +image('img/portfolio/alcatraz_website_02.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/alcatraz_website_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Famous Inmates pages"}').gallery-item.mb-30
+              +image('img/portfolio/alcatraz_website_03.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Link
+          ul.list-unstyled.mb-0
+            li
+              a(href='https://www.alcatrazhistory.com/' target='_blank').navi-link.font-weight-medium www.alcatrazhistory.com
+        .widget
+          h2.widget-title Objective
+          p Redesign and develop alcatrazhistory.com to be mobile-friendly and easier to navigate.
+        .widget
+          h2.widget-title Result
+          p A redesigned, restructured, mobile-friendly website resulting in X% more page views and X% longer sessions.
+        .widget
+          h2.widget-title Description
+          p In curating content for the Alcatraz Island guide of the <a href="portfolio-Guidekick-App.html">Guidekick app</a>, we became good friends with Michael Esslinger, the foremost historian of Alcatraz. This was an exceptionally interesting project to work on because of the stories surrounding Alcatraz. I won’t give any spoilers, but Alcatraz has been much more than just a prison for hardened criminals. If you’re interested in the full history, look no further, <a href="https://www.alcatrazhistory.com/rock/rock.htm" target="_blank">you’ve found it</a>! The sheer amount of content might be a bit overwhelming, but the website’s intent is to be a historical archive, and it succeeds wildly in that.
+        .widget
+          h2.widget-title My Roles
+          p Web design, logo design, content structure, front-end development
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
