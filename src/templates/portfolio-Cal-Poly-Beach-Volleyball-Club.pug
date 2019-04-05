@@ -1,0 +1,65 @@
+extends partials/layout
+
+block vars
+  - var bodyClass = 'portfolio-inner';
+
+//- Override default config variables
+append config
+  - var navbarTemplate = 'navbar-simple'
+  - var pageTitle = 'Cal Poly Beach Volleyball Club'
+  - var parentMenu = 'Portfolio'
+
+//- Page Content
+block content
+  .container.py-5.px-3.px-lg-5
+    .row.pt-md-5
+      // Project Gallery
+      .col-12.col-md-6.mb-3
+        .row
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/cpbv_05.jpg' data-fancybox='sideGallery' data-options='{"caption": "Club logo"}').gallery-item.mb-30
+              +image('img/portfolio/cpbv_05.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='https://vimeo.com/328524396?autoplay=1&muted=1' data-fancybox='sideGallery' data-width="1000" data-height="563" data-options='{"caption": "Club video (I didn’t produce this)"}').gallery-item.type-video.mb-30
+              +image('img/portfolio/cpbv_10.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/cpbv_06.jpg' data-fancybox='sideGallery' data-options='{"caption": "Shirt design mockup, which was printed on tank tops for the club’s quarterly membership apparel"}').gallery-item.mb-30
+                  +image('img/portfolio/cpbv_06.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/cpbv_04.jpg' data-fancybox='sideGallery' data-options='{"caption": "Shirt design mockup, which was printed on tank tops for one of the club’s fundraising tournaments for breast cancer research"}').gallery-item.mb-30
+                  +image('img/portfolio/cpbv_04.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            .row
+              .col
+                a(href='img/portfolio/single/cpbv_07.jpg' data-fancybox='sideGallery' data-options='{"caption": "Shirt design mockup, which was printed on tank tops for the club’s quarterly membership apparel"}').gallery-item.mb-30
+                  +image('img/portfolio/cpbv_07.jpg', 'Gallery Image')
+              .col
+                a(href='img/portfolio/single/cpbv_03.jpg' data-fancybox='sideGallery' data-options='{"caption": "Shirt design mockup, which was printed on tank tops for the club’s quarterly membership apparel"}').gallery-item.mb-30
+                  +image('img/portfolio/cpbv_03.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/cpbv_08.jpg' data-fancybox='sideGallery' data-options='{"caption": "Poster for one of the club’s tournaments"}').gallery-item.mb-30
+              +image('img/portfolio/cpbv_08.jpg', 'Gallery Image')
+          .col-12.col-sm-6.col-md-12
+            a(href='img/portfolio/single/cpbv_01.jpg' data-fancybox='sideGallery' data-options='{"caption": "Made some stickers to give out to members"}').gallery-item.mb-30
+              +image('img/portfolio/cpbv_01.jpg', 'Gallery Image')
+      
+      // Project Details
+      .col-12.col-md-6
+        h1.h4.mb-5 #{pageTitle}
+        .widget
+          h2.widget-title Description
+          p During my first year at Cal Poly State University in San Luis Obispo, a great guy named Mike Smith started the Cal Poly Beach Volley Club. I had never played beach volleyball, but loved sports, surfing, and just being outside. I was instantly hooked. I started doing design and marketing work for the club, and when Mike graduated a couple years later, I stepped into the role of leading it with his brother Eric.
+        .widget
+          h2.widget-title My Roles
+          p Club president, event organization, fundraising, design, web development
+    
+    // portfolio-share.pug template
+    // include partials/portfolio-share
+    
+    // entry-navigation-portfolio.pug template
+    // include partials/entry-navigation-portfolio
+
+  //- footer-portfolio.pug template
+  include partials/footer-default
