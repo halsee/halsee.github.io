@@ -15,10 +15,10 @@
     repeat: no-repeat;
   }
   .page-title-heading {
-    font-size: ($font-size-base * 2.75);
+    font-size: ($font-size-base * 3.5);
     letter-spacing: .034em;
     line-height: 1.2;
-    text-shadow: 0 .625rem 1.5rem rgba($black, .2);
+    // text-shadow: 0 .625rem 1.5rem rgba($black, .2);
     word-break: break-all;
   }
   .page-title-subheading {

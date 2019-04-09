@@ -16,7 +16,7 @@ block content
       li.nav-item
         a(href='#' class='nav-link active all' data-filter='*')
           | All&nbsp;
-          sup 17
+          sup 21
       li.nav-item
         a(href='#' class='nav-link featured' data-filter='.featured')
           | Featured&nbsp;
@@ -24,11 +24,11 @@ block content
       li.nav-item
         a(href='#' class='nav-link mobile' data-filter='.mobile')
           | Mobile&nbsp;
-          sup 6
+          sup 7
       li.nav-item
         a(href='#' class='nav-link web' data-filter='.web')
           | Web&nbsp;
-          sup 4
+          sup 5
       li.nav-item
         a(href='#' class='nav-link touchscreen' data-filter='.touchscreen')
           | Touchscreen&nbsp;
@@ -36,13 +36,13 @@ block content
       li.nav-item
         a(href='#' class='nav-link design' data-filter='.design')
           | Design&nbsp;
-          sup 5
+          sup 8
 
     ul(class='nav nav-tabs item-filter sub-filter nav-tabs-style-2 mb-4 mb-md-5')
       li.nav-item
         a(href='#' class='nav-link prototyping' data-filter='.prototyping')
           | Prototyping&nbsp;
-          sup 5
+          sup 6
       li.nav-item
         a(href='#' class='nav-link user-testing' data-filter='.user-testing')
           | User Testing&nbsp;
@@ -227,6 +227,14 @@ block content
             .filer-grid
               .nav-tabs
                 a(href='#' class='nav-link' data-filter='.data').tag-link Data
+
+      // Portfolio Item
+      .grid-item.web.design.mb-30
+        .portfolio-card
+          a(href='portfolio-Alcatraz-History-Website.html').portfolio-thumb
+            +image('img/portfolio/alcatraz_website_01.jpg', 'Portfolio Thumbnail')
+          .portfolio-card-body
+            h5.portfolio-title: a(href='portfolio-Alcatraz-History-Website.html') Alcatraz History Website
       
       // Portfolio Item
       .grid-item.mobile.mb-30
