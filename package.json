@@ -11,7 +11,7 @@
   "license": "ISC",
   "homepage": "themes.rokaux.com/createx/",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "concurrently": "^4.1.0",
     "del": "^3.0.0",
     "emitty": "^1.4.0",
